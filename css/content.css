@@ -1,9 +1,9 @@
 
-#show-eye   {content: url('../img/boy/eye/星途男瞳.png');}
-#show-hair  {content: url('../img/boy/hair/蜜糖男发.png');}
-#show-face  {content: url('../img/boy/face/音速恶魔泡泡糖.png');}
-#show-cap   {content: url('img/default/无.png');}
-#show-body  {content: url('../img/boy/body/运动潮流男装.png');}
+#show-eye   {content: url('/img/boy/eye/星途男瞳.png');}
+#show-hair  {content: url('/img/boy/hair/蜜糖男发.png');}
+#show-face  {content: url('/img/boy/face/音速恶魔泡泡糖.png');}
+#show-cap   {content: url('/img/default/无.png');}
+#show-body  {content: url('/img/boy/body/运动潮流男装.png');}
 
 #tab-body::after    {content: '衣服';}
 #tab-hair::after    {content: '头发';}

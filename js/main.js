@@ -41,8 +41,7 @@ $(document).ready(function() {
 function loadIcon(item, src) {
     item.append(`<img class="icon" src="${src}" title="${src.substr(src.indexOf('icon') + 5).replace('.png', '')}">`)
     item.children('img:last-child').click(function() {
-        console.log(item[0])
-        $(`.show[type="${item.attr('type')}"]`).css('content', `url('../${src.replace('/icon', '')}')`)
+        $(`.show[type="${item.attr('type')}"]`).css('content', `url('/${src.replace('/icon', '')}')`)
     })
 }
 
