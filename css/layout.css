@@ -69,14 +69,6 @@ img {
     width: 8vh; height: 8vh;
 }
 
-.sex[sex='boy']::before {
-    content: '男';
-}
-
-.sex[sex='girl']::before {
-    content: '女';
-}
-
 /*物品栏部分*/
 .item-container {
     top: auto; bottom: 8vh; left: 0; right: 0;
@@ -116,7 +108,6 @@ img {
 }
 
 .item::-webkit-scrollbar-thumb {
-    background: .222;
     border-radius: 5px;
 }
 
