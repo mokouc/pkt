@@ -1,0 +1,81 @@
+/*
+ * 定义页面的效果
+ * 过度，动画，模糊，透明度等
+ */
+
+ * {
+    transition: top 0.3s, bottom 0.3s, left 0.3s, right 0.3s;
+ }
+
+/*开关物品栏滑动效果*/
+.item-container {
+    transition: width 0.3s linear 0.3s, height 0.3s, opacity 0.3s;
+}
+
+.main-container[status='selected'] .item-container {
+    transition: width 0s, height 0.3s;
+}
+
+/*开关物品栏背景及文字模糊效果*/
+.main-container[status='selected'] .banner {
+    filter: blur(10px);
+}
+
+.banner {
+    transition: filter 0.5s, top 0.5s, bottom 0.5s;
+}
+
+/*开关物品栏人物移动动效果*/
+.show {
+    transition: width 0.5s, height 0.5s, right 0.5s;
+}
+
+/*物品淡出淡入效果*/
+.item {
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+/*标签栏滑出效果*/
+.tab-container {
+    animation: loadTab-hor 0.5s;
+    transition: translate 0.3s
+}
+
+/*响应横屏*/
+@media screen and (orientation:landscape) { 
+
+    /*开关物品栏滑动效果*/
+    .item-container {
+        transition: width 0.3s, height 0.3s linear 0.3s, opacity 0.3s;
+    }
+
+    .main-container[status='selected'] > .item-container {
+        transition: width 0.3s, height 0s;
+    }
+
+    /*标签栏滑出效果*/
+    .tab-container {
+        animation: loadTab-ver 0.5s;
+        transition: translate 0.3s
+    }
+}
+
+/*竖屏标签滑出效果*/
+@keyframes loadTab-hor {
+    from { 
+        bottom: -8vh;
+    }
+    to { 
+        bottom: 0;
+    }
+}
+
+/*横屏标签滑出效果*/
+@keyframes loadTab-ver {
+    from { 
+        right: -8vh;
+    }
+    to { 
+        right: 0vh;
+    }
+}

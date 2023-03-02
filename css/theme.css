@@ -1,0 +1,37 @@
+/*
+ * 定义页面的主题
+ */
+
+ /*展示部分*/
+.show-container {
+    background-color: #eee;
+}
+
+.banner {
+    color: #333;
+}
+
+/*标签部分*/
+.tab-container {
+    background-color: #333;
+}
+
+.tab {
+    color: white;
+}
+
+.tab[status='selected']  {
+    background-color: #222;
+}
+
+.sex {
+    color: white;
+}
+
+/*物品栏部分*/
+.item-container {
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+
+
