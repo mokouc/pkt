@@ -2,8 +2,7 @@
 $(document).ready(function() {
 
     //将需要置顶的物品加载到物品栏
-    loadIcon($('.item[type="face"]'), 'img/default/icon/无.png')
-    loadIcon($('.item[type="cap"]'), 'img/default/icon/无.png')
+    loadIcon($('.item[type="face"], .item[type="cap"]'), 'img/default/icon/无.png')
     //加载所有物品到物品栏
     eval('iconList').map(function(icon) {
         var tmp = icon.split('/')
@@ -41,7 +40,7 @@ $(document).ready(function() {
 function loadIcon(item, src) {
     item.append(`<img class="icon" src="${src}" title="${src.substr(src.indexOf('icon') + 5).replace('.png', '')}">`)
     item.children('img:last-child').click(function() {
-        $(`.show[type="${item.attr('type')}"]`).css('content', `url('./${src.replace('/icon', '')}')`)
+        $(`.show[type="${$(this).parent().attr('type')}"]`).css('content', `url('./${src.replace('/icon', '')}')`)
     })
 }
 
