@@ -5,6 +5,8 @@
 #show-cap   {content: url('../img/default/无.png');}
 #show-body  {content: url('../img/boy/body/运动潮流男装.png');}
 
+#banner::after {content: 'PICATOWN';}
+
 #tab-body::after    {content: '衣服';}
 #tab-hair::after    {content: '头发';}
 #tab-eye::after     {content: '眼瞳';}
