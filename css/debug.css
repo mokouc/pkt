@@ -1,9 +1,0 @@
-/*
- * 定义debug时的效果
- */
-
-/*内边框*/
-.debug {
-    box-sizing: border-container;
-    border: 2px solid red;
-}
