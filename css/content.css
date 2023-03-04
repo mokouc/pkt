@@ -1,9 +1,9 @@
 
-#show-eye   {content: url('../img/boy/eye/星途男瞳.png');}
-#show-hair  {content: url('../img/boy/hair/蜜糖男发.png');}
-#show-face  {content: url('../img/boy/face/音速恶魔泡泡糖.png');}
-#show-cap   {content: url('../img/default/无.png');}
-#show-body  {content: url('../img/boy/body/运动潮流男装.png');}
+#show-eye   {content: url('../img/girl/eye/星途女瞳.png');}
+#show-hair  {content: url('../img/girl/hair/天使街女发（金）.png');}
+#show-body  {content: url('../img/girl/body/软萌白猫女装.png');}
+#show-face  {content: url('../img/girl/face/公主腮红.png');}
+#show-cap   {content: url('../img/girl/cap/波点星星发饰.png');}
 
 #banner::after {content: 'PICATOWN';}
 
